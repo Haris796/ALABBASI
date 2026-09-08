@@ -1,0 +1,422 @@
+/* ==========================================================
+   Pioneer Plastic Factory - Home Hero Section
+   Requires Bootstrap 5 CSS/JS + Bootstrap Icons to be loaded
+   in the app (see comment at top of Home.jsx)
+   ========================================================== */
+
+:root {
+  --pioneer-green: #1c6b3c;
+  --pioneer-green-dark: #0f3d22;
+  --pioneer-green-bright: #4caf1f;
+  --overlay-gray: rgba(60, 60, 60, 0.75);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pioneer-page {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: #fff;
+}
+
+/* ===== Top Bar ===== */
+.top-bar {
+  background-color: #3d3d3d;
+  font-size: 0.85rem;
+}
+
+.top-bar-link {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.top-bar-link:hover {
+  color: var(--pioneer-green-bright);
+  opacity: 1;
+}
+
+.divider {
+  width: 1px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.social-icon:hover {
+  color: var(--pioneer-green-bright);
+  opacity: 1;
+}
+
+/* ===== Navbar ===== */
+.main-navbar {
+  background-color: #4b4b4b;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* ===== Text Logo ===== */
+.brand-text-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  text-decoration: none;
+  padding: 0.25rem 0;
+}
+
+.brand-text-logo .brand-main {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--pioneer-green-bright),
+    #ffffff 45%,
+    var(--pioneer-green-bright)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+}
+
+.brand-text-logo .brand-sub {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--pioneer-green-bright);
+  margin-top: 2px;
+  align-self: center;
+  position: relative;
+  padding-top: 4px;
+}
+
+.brand-text-logo .brand-sub::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: var(--pioneer-green-bright);
+}
+
+.brand-text-logo:hover .brand-main {
+  filter: brightness(1.15);
+}
+
+.main-navbar .nav-link {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0.25rem;
+}
+
+.main-navbar .nav-link:hover,
+.main-navbar .nav-link.active {
+  color: var(--pioneer-green-bright);
+}
+
+/* Products dropdown */
+.pioneer-dropdown {
+  background-color: #2e2e2e;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  min-width: 220px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.pioneer-dropdown .dropdown-item {
+  color: #fff;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.pioneer-dropdown .dropdown-item:hover,
+.pioneer-dropdown .dropdown-item:focus {
+  background-color: var(--pioneer-green);
+  color: #fff;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  min-height: 620px;
+  background-color: #5a5a5a;
+  background-image: linear-gradient(
+      var(--overlay-gray),
+      var(--overlay-gray)
+    ),
+    url("/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+}
+
+/* Start Thinking Green stop-sign badge */
+.green-badge {
+  width: 170px;
+  height: 170px;
+  background-color: var(--pioneer-green-bright);
+  border: 4px solid #fff;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.green-badge .badge-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.green-badge .badge-sub {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.hero-heading {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #eee;
+  max-width: 600px;
+}
+
+.btn-pioneer {
+  background-color: var(--pioneer-green-dark);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.75rem 2rem;
+  border-radius: 2px;
+  border: none;
+}
+
+.btn-pioneer:hover {
+  background-color: var(--pioneer-green);
+  color: #fff;
+}
+
+/* ===== WhatsApp Floating Button ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: #fff;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(37, 211, 102, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 3px solid #fff;
+  line-height: 1;
+}
+
+.whatsapp-float:hover {
+  color: #fff !important;
+  transform: scale(1.15);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5), 0 0 0 6px rgba(37, 211, 102, 0.3);
+  background-color: #1ebd59;
+  text-decoration: none;
+}
+/* Navbar Logo */
+.navbar-logo {
+  width: 95px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Hero Logo */
+.hero-logo-image {
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobile Logo */
+@media (max-width: 768px) {
+  .navbar-logo {
+    width: 80px;
+  }
+
+  .hero-logo-image {
+    width: 95px;
+  }
+}
+
+
+/* ==========================================================
+   Responsive Breakpoints
+   ========================================================== */
+
+@media (max-width: 991.98px) {
+  .brand-text-logo .brand-main {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .brand-text-logo .brand-sub {
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+  }
+
+  .main-navbar .nav-link {
+    padding: 0.6rem 0.5rem;
+  }
+
+  .navbar-collapse {
+    background-color: #3a3a3a;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+  }
+
+  .pioneer-dropdown {
+    background-color: #1f1f1f;
+    padding: 0.5rem 0;
+    width: 100%;
+    min-width: 100%;
+    position: static;
+    border-radius: 0;
+    margin-top: 0.5rem;
+  }
+
+  .pioneer-dropdown .dropdown-item {
+    padding: 0.75rem 2rem;
+    font-size: 0.95rem;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .brand-text-logo .brand-main {
+    font-size: 1.25rem;
+  }
+
+  .green-badge {
+    width: 130px;
+    height: 130px;
+  }
+
+  .green-badge .badge-title {
+    font-size: 1.3rem;
+  }
+
+  .green-badge .badge-sub {
+    font-size: 0.8rem;
+  }
+
+  .hero-heading {
+    font-size: 1.6rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .nav-item.dropdown {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brand-text-logo .brand-main {
+    font-size: 1.05rem;
+  }
+
+  .brand-text-logo .brand-sub {
+    font-size: 0.55rem;
+    letter-spacing: 3px;
+  }
+
+  .hero-heading {
+    font-size: 1.35rem;
+  }
+
+  .btn-pioneer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .whatsapp-float {
+    width: 58px;
+    height: 58px;
+    font-size: 1.8rem;
+    bottom: 15px;
+    right: 15px;
+    border: 3px solid #fff;
+    line-height: 1;
+  }
+
+  .pioneer-dropdown {
+    width: 100% !important;
+    background-color: #1f1f1f;
+  }
+
+  .pioneer-dropdown .dropdown-item {
+    padding: 0.75rem 2rem;
+  }
+}
