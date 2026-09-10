@@ -28,11 +28,11 @@ useEffect(() => {
 
   // Product images
   const productImages = {
-    product1: ["/W3.png", "/NW1.jpg"], // Non-Woven Bags
-    product2: ["/Disposible1.jpg", "/D2.jpg"], // Disposable Cups
-    product3: ["/DisposibleCups.jpg", "/D3.jpg"], // Biodegradable Bags
+    product1: ["/W3.png", "/NW1.jpg","/Al1.jpeg","/Al2.jpeg"], // Non-Woven Bags
+    product2: ["/Disposible1.jpg", "/D2.jpg","/al9.jpeg","/al10.jpeg","/al8.jpeg"], // Disposable Cups
+    product3: ["/DisposibleCups.jpg", "/D3.jpg","/al12.jpeg","/al11.jpeg"], // Biodegradable Bags
     product4: ["/fork.jpg", "/spoon.jpg"], // Spoons & Forks
-    product5: ["/foam.jpg", "/foam2.jpg"], // Foam Parcel
+    product5: ["/al3.jpeg", "/al4.jpeg","/al5.jpeg"], // Foam Parcel
   };
 
   // Auto-rotate sliders
@@ -77,7 +77,8 @@ useEffect(() => {
               <h3 className="product-heading">Non-Woven Bags</h3>
               <p className="product-description">
                 Our non-woven bags are eco-friendly, durable, and perfect for retail, 
-                promotional, and corporate use. Manufactured with premium materials, 
+                promotional, and corporate use. Available wholesale and made with
+                premium materials,
                 they offer excellent print quality and reusability. Ideal for businesses 
                 looking to make a sustainable impact.
               </p>

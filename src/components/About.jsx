@@ -129,7 +129,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* ===== Owner/Leadership Section ===== */}
+      {/* ===== Owner/M Niaz Abbasi Section ===== */}
       <div className="container-fluid px-0">
         <div className="row g-0 align-items-center owner-section">
           {/* Left: Image */}
@@ -143,18 +143,18 @@ const About = () => {
           {/* Right: Content */}
           <div className="col-lg-6 owner-content-col">
             <div className="owner-content-inner">
-              <span className="owner-label">Meet Our Leadership</span>
-              <h3 className="owner-heading">AL ABBASI</h3>
+              <span className="owner-label">Meet M Niaz Abbasi</span>
+              <h3 className="owner-heading">M Niaz Abbasi</h3>
               <p className="owner-title">Founder & Managing Director</p>
               
               <p className="owner-description">
-              At AL ABBASI, we are building a trusted name in non-woven bag manufacturing through quality, innovation, and customer satisfaction. We are committed to delivering reliable and sustainable packaging solutions that meet the needs of businesses worldwide.
+              At AL ABBASI Traders, we are building a trusted name in non-woven bag wholesale through quality, innovation, and customer satisfaction. We are committed to delivering reliable and sustainable packaging solutions that meet the needs of businesses worldwide.
 
               </p>
 
               <div className="owner-highlights">
                 <div className="highlight-item">
-                  <div className="highlight-number">15+</div>
+                  <div className="highlight-number">3+</div>
                   <div className="highlight-label">Years Experience</div>
                 </div>
                 <div className="highlight-item">

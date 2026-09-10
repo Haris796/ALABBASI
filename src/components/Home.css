@@ -62,6 +62,25 @@
   padding-bottom: 1rem;
 }
 
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 62px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.navbar-logo {
+  width: 134px;
+  height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: contrast(1.12) saturate(1.08);
+}
+
 /* ===== Text Logo ===== */
 .brand-text-logo {
   display: flex;
@@ -157,16 +176,51 @@
 
 /* ===== Hero Section ===== */
 .hero-section {
+  position: relative;
+  overflow: hidden;
   min-height: 620px;
   background-color: #5a5a5a;
-  background-image: linear-gradient(
-      var(--overlay-gray),
-      var(--overlay-gray)
-    ),
-    url("/hero-bg.jpg");
+  padding: 4rem 0;
+}
+
+.home-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.home-slider-slide {
+  position: absolute;
+  inset: 0;
   background-size: cover;
   background-position: center;
-  padding: 4rem 0;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1.08);
+  transition: opacity 1.5s ease-in-out, transform 8s ease-in-out;
+}
+
+.home-slider-slide.home-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.home-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(6, 26, 15, 0.92) 0%,
+    rgba(6, 26, 15, 0.78) 32%,
+    rgba(6, 26, 15, 0.45) 58%,
+    rgba(6, 26, 15, 0.15) 85%
+  );
+  z-index: 1;
+}
+
+.hero-section > .container {
+  position: relative;
+  z-index: 2;
 }
 
 /* Start Thinking Green stop-sign badge */
@@ -263,13 +317,6 @@
   background-color: #1ebd59;
   text-decoration: none;
 }
-/* Navbar Logo */
-.navbar-logo {
-  width: 95px;
-  height: auto;
-  object-fit: contain;
-}
-
 /* Hero Logo */
 .hero-logo-image {
   width: 120px;
@@ -280,8 +327,14 @@
 
 /* Mobile Logo */
 @media (max-width: 768px) {
+  .logo-wrapper {
+    width: 116px;
+    height: 52px;
+  }
+
   .navbar-logo {
-    width: 80px;
+    width: 110px;
+    height: 50px;
   }
 
   .hero-logo-image {

@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="col-lg-4 col-md-6">
             <a href="#home" className="footer-brand">
               <span className="brand-main">AL ABBASI</span>
-              <span className="brand-sub">Quality</span>
+              <span className="brand-sub">Traders</span>
             </a>
             <p className="footer-about">
              We provide high-quality, durable, and customizable non-woven bags for retail, promotional, corporate, and everyday use. With a commitment to quality, competitive pricing, and reliable service, we aim to deliver packaging solutions that meet every customer’s needs.

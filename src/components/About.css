@@ -158,7 +158,7 @@
   border-color: var(--pioneer-green-bright);
 }
 
-/* ===== Owner/Leadership Section ===== */
+/* ===== Owner/M Niaz Abbasi Section ===== */
 .owner-section {
   background-color: #f5f5f5;
   min-height: 500px;
@@ -405,27 +405,34 @@
 
   .owner-section {
     min-height: auto;
+    align-items: stretch !important;
   }
 
   .owner-image-col {
     order: 2;
+    flex: 0 0 50%;
+    width: 50%;
     min-height: auto;
     padding: 0;
+    align-self: stretch;
   }
 
   .owner-content-col {
     order: 1;
+    flex: 0 0 50%;
+    width: 50%;
     min-height: auto;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 0.9rem;
   }
 
   .owner-image-wrapper {
     max-width: none;
-    aspect-ratio: 4 / 3;
+    height: 100%;
+    aspect-ratio: auto;
   }
 
   .owner-heading {
-    font-size: 1.8rem;
+    font-size: 1.35rem;
   }
 
   .owner-title {

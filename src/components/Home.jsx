@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
+  const [activeHomeSlide, setActiveHomeSlide] = useState(0);
+  const homeSliderImages = ["/Al1.jpeg", "/Al2.jpeg", "/al3.jpeg", "/al4.jpeg", "/al5.jpeg", "/al6.jpeg"];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveHomeSlide((prev) => (prev + 1) % homeSliderImages.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [homeSliderImages.length]);
+
   return (
     <div className="pioneer-page" id="home">
       {/* ===== Top Info Bar + Navbar ===== */}
@@ -39,8 +50,8 @@ const Home = () => {
             {/* Logo */}
             <a className="navbar-brand logo-wrapper" href="#home">
               <img
-                src="/alabbasi.jpeg"
-                alt="Al Abbasi Traders Logo"
+                src="/ALABBASIlogo.png"
+                alt="AL ABBASI logo"
                 className="navbar-logo"
               />
             </a>
@@ -148,25 +159,30 @@ const Home = () => {
 
       {/* ===== Hero Section ===== */}
       <section className="hero-section d-flex align-items-center">
+        <div className="home-hero-bg" aria-hidden="true">
+          {homeSliderImages.map((src, index) => (
+            <div
+              key={src}
+              className={
+                "home-slider-slide" +
+                (index === activeHomeSlide ? " home-slide-active" : "")
+              }
+              style={{ backgroundImage: `url(${src})` }}
+            />
+          ))}
+          <div className="home-hero-overlay" />
+        </div>
+
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-md-10">
-              {/* Logo replacing Start Thinking Green badge */}
-              <div className="hero-logo mb-4">
-                <img
-                  src="/alabbasi.jpeg"
-                  alt="Al Abbasi Traders Logo"
-                  className="hero-logo-image"
-                />
-              </div>
-
               <h1 className="hero-heading mb-4">
-                CUSTOMIZED ORDERS ARE UNDERTAKEN, MANUFACTURER OF
-                Non-Wooven BAGS, Forks & Spoons, Disposable Glass, Foam Parcel
+                CUSTOMIZED ORDERS ARE UNDERTAKEN, WHOLESALE NON-WOVEN BAGS,
+                Forks & Spoons, Disposable Glass, Foam Parcel
               </h1>
 
               <p className="hero-text mb-4">
-                We specialize in customized orders and manufacture
+                We specialize in customized orders and wholesale
                 high-quality biodegradable bags.
               </p>
 
