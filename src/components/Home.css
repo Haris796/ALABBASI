@@ -66,15 +66,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px;
-  height: 62px;
+  width: 256px;
+  height: 100px;
   overflow: hidden;
   padding: 0;
 }
 
 .navbar-logo {
-  width: 134px;
-  height: 60px;
+  width: 250px;
+  height: 94px;
   max-width: 100%;
   object-fit: contain;
   object-position: center;
@@ -260,10 +260,14 @@
 }
 
 .hero-heading {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 2.6rem;
   font-weight: 800;
   line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: #eaf7df;
   text-transform: uppercase;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.35);
 }
 
 .hero-text {
@@ -327,14 +331,21 @@
 
 /* Mobile Logo */
 @media (max-width: 768px) {
+  .main-navbar {
+    padding-left: 0 !important;
+    padding-right: 1rem !important;
+  }
+
   .logo-wrapper {
-    width: 116px;
-    height: 52px;
+    width: 256px;
+    height: 100px;
+    justify-content: flex-start;
   }
 
   .navbar-logo {
-    width: 110px;
-    height: 50px;
+    width: 321px;
+    height: 100px;
+    padding-right: 55px;
   }
 
   .hero-logo-image {
@@ -385,7 +396,7 @@
   }
 
   .hero-heading {
-    font-size: 2rem;
+    font-size: 2.05rem;
   }
 
   .hero-section {
@@ -413,7 +424,7 @@
   }
 
   .hero-heading {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .hero-text {
@@ -446,7 +457,7 @@
   }
 
   .hero-heading {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
   }
 
   .btn-pioneer {
