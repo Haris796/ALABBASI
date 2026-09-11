@@ -4,7 +4,7 @@ import "./Home.css";
 
 const Home = () => {
   const [activeHomeSlide, setActiveHomeSlide] = useState(0);
-  const homeSliderImages = ["/Al1.jpeg", "/Al2.jpeg", "/al3.jpeg", "/al4.jpeg", "/al5.jpeg", "/al6.jpeg"];
+  const homeSliderImages = ["/Al1.jpeg", "/Al2.jpeg", "/al3.jpeg", "/al4.jpeg", "/al5.jpeg", "/al6.jpeg","/al7.jpeg", "/al8.jpeg", "/al9.jpeg", "/al10.jpeg", "/al11.jpeg", "/al12.jpeg", "/W3.png", "/NW1.jpg", "/Disposible1.jpg", "/D2.jpg", "/DisposibleCups.jpg", "/D3.jpg", "/fork.jpg", "/spoon.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,7 +50,7 @@ const Home = () => {
             {/* Logo */}
             <a className="navbar-brand logo-wrapper" href="#home">
               <img
-                src="/ALABBASIlogo.png"
+                src="/ALABBASIlogo.jpeg"
                 alt="AL ABBASI logo"
                 className="navbar-logo"
               />
@@ -177,8 +177,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-8 col-md-10">
               <h1 className="hero-heading mb-4">
-                CUSTOMIZED ORDERS ARE UNDERTAKEN, WHOLESALE NON-WOVEN BAGS,
-                Forks & Spoons, Disposable Glass, Foam Parcel
+                Wholesale Supplier of Non-Woven Bags & Disposable Food Packaging Solutions. We provide high-quality products at competitive prices, with reliable service and efficient solutions for all your bulk packaging needs
               </h1>
 
               <p className="hero-text mb-4">
